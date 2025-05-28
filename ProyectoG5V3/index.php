@@ -1,0 +1,4 @@
+<?php
+readfile("home.html");
+?>
+

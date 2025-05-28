@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --dark-blue: #213448;
+  --mid-blue: #547792;
+  --light-blue: #94B4C1;
+  --light-cream: #ECEFCA;
+  --text-color: #213448;
+  --background: #ECEFCA;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* Grid Principal */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "A"
+    "B1"
+    "C1";
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Header (área A) */
+.area-a {
+  grid-area: A;
+  background-color: var(--dark-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+/* Área B1 (título principal) */
+.area-b1 {
+  grid-area: B1;
+  text-align: center;
+}
+
+.area-b1 h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: var(--dark-blue);
+}
+
+/* Área C1 (contenedor para la card) */
+.area-c1 {
+  grid-area: C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border: 2px solid var(--light-blue);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: var(--mid-blue);
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+  height: 70px;
+  border-radius: 5px;
+}
+
+/* Botones */
+nav button {
+  background-color: var(--mid-blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: var(--light-blue);
+}

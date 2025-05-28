@@ -1,0 +1,110 @@
+body {
+    background-color: #F6F8D5; /* Color de fondo */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada para toda la página */
+}
+
+.logo-container {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Espaciado desde la parte superior */
+    left: 10px; /* Espaciado desde la izquierda */
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Mantener proporción del logo */
+}
+
+.logo-container img {
+    width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+h1 {
+    text-align: center; /* Centrar el texto */
+    font-family: 'Times New Roman'; /* Fuente amigable */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #FFFFFF; /* Color del texto (blanco) */
+    background-color: #205781; /* Fondo azul marino */
+    margin-top: 150px; /* Espaciado desde la parte superior */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+.info-box {
+    background-color: #ffffff; /* Fondo claro */
+    color: #205781; /* Color del texto */
+    border: 1px solid #98D2C0; /* Borde sutil verde menta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo y centrado */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    text-align: center; /* Centrar el texto */
+}
+
+.info-box h2 {
+    font-size: 1.8em; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+    color: #4F959D; /* Color del título (verde azulado) */
+}
+
+.info-box p {
+    font-size: 1.1em; /* Tamaño del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+.button-container {
+    display: flex; /* Usar flexbox para alinear los botones */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 15px; /* Espaciado entre los botones */
+    margin-top: 20px; /* Espaciado superior opcional */
+}
+
+button {
+    background-color: #98D2C0; /* Color de fondo (verde menta claro) */
+    color: #205781; /* Color del texto (azul marino) */
+    font-family: 'Times New Roman'; /* Fuente amigable */
+    font-size: 1.1em; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover { /* Efecto al pasar el mouse */
+    background-color: #205781; /* Color de fondo al pasar el mouse */
+    color: #FFFFFF; /* Cambiar color del texto al pasar el mouse */
+}
+
+footer {
+    background-color: #205781; /* Fondo del pie de página */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado */
+    padding: 3px; /* Espaciado interno */
+    font-size: 12px; /* Tamaño de fuente */
+    border-top: 2px solid #4F959D; /* Borde superior */
+}
+
+footer a {
+    color: #fff; /* Color de enlace */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 8px; /* Espaciado entre enlaces */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+footer a:hover {
+    color: #98D2C0; /* Color del enlace al pasar el mouse */
+}
+
+footer i {
+    margin-right: 6px; /* Espacio a la derecha del ícono */
+}
+
+/* Corregido: "max-whith" -> "max-width" */
+@media (max-width: 600px) {
+    footer {
+        font-size: 10px; /* Reducir fuente en pantallas pequeñas */
+        padding: 8px; /* Ajustar espaciado */
+    }
+}
