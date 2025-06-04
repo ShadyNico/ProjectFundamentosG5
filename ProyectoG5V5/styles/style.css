@@ -1,0 +1,438 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --dark-blue: #213448;
+  --mid-blue: #547792;
+  --light-blue: #94B4C1;
+  --light-cream: #ECEFCA;
+  --text-color: #213448;
+  --background: #ECEFCA;
+  --gradient: linear-gradient(135deg, #94B4C1, #ECEFCA);
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos específicos para Home */
+.home .header {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home .header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home .header-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home .logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.home .navigation {
+  width: 100%;
+}
+
+.home .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: var(--mid-blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--light-blue);
+}
+
+.home .grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.home .content-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.home .info-box {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home .same-height {
+  min-height: 200px;
+}
+
+.home .content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.home .cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--gradient);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.home .cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home .cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.home .footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.home .footer .container {
+  text-align: center;
+}
+
+.home .footer p {
+  margin: 5px 0;
+}
+
+.home .footer a {
+  color: var(--light-blue);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.home .footer a:hover {
+  text-decoration: underline;
+}
+
+.home .footer .fab {
+  margin-right: 5px;
+}
+
+/* Estilos para Causas Sociales, Protección Animal y Salud y Bienestar */
+.cause-social .grid-container,
+.protection-animal .grid-container,
+.cause-health .grid-container {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b1 b1"
+    "c1 c1"
+    "c2 c2"
+    "c3 c3";
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Áreas del grid */
+.cause-social .area-a,
+.protection-animal .area-a,
+.cause-health .area-a {
+  grid-area: a;
+  background-color: var(--dark-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.cause-social .area-b1,
+.protection-animal .area-b1,
+.cause-health .area-b1 {
+  grid-area: b1;
+  text-align: center;
+}
+
+.cause-social .area-c1,
+.protection-animal .area-c1,
+.cause-health .area-c1 {
+  grid-area: c1;
+}
+
+.cause-social .area-c2,
+.protection-animal .area-c2,
+.cause-health .area-c2 {
+  grid-area: c2;
+}
+
+.cause-social .area-c3,
+.protection-animal .area-c3,
+.cause-health .area-c3 {
+  grid-area: c3;
+}
+
+.cause-social .logo,
+.protection-animal .logo,
+.cause-health .logo {
+  height: 70px;
+  border-radius: 5px;
+}
+
+.cause-social .area-b1 h1,
+.protection-animal .area-b1 h1,
+.cause-health .area-b1 h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: var(--dark-blue);
+}
+
+.cause-social .card,
+.protection-animal .card,
+.cause-health .card {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cause-social .card h2,
+.protection-animal .card h2,
+.cause-health .card h2 {
+  font-size: 1.8rem;
+  color: var(--mid-blue);
+  margin-bottom: 15px;
+}
+
+.cause-social .card p,
+.protection-animal .card p,
+.cause-health .card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cause-social .support-options,
+.protection-animal .support-options,
+.cause-health .support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.cause-social .support-item,
+.protection-animal .support-item,
+.cause-health .support-item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cause-social .support-item:hover,
+.protection-animal .support-item:hover,
+.cause-health .support-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cause-social .support-item h3,
+.protection-animal .support-item h3,
+.cause-health .support-item h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.cause-social .support-item p,
+.protection-animal .support-item p,
+.cause-health .support-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.cause-social .donation-form,
+.protection-animal .donation-form,
+.cause-health .donation-form {
+  background: var(--gradient);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cause-social .form-group,
+.protection-animal .form-group,
+.cause-health .form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.cause-social .form-group label,
+.protection-animal .form-group label,
+.cause-health .form-group label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: var(--light-cream);
+  padding: 0 5px;
+  font-size: 14px;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.cause-social .form-group input,
+.cause-social .form-group select,
+.cause-social .form-group textarea,
+.protection-animal .form-group input,
+.protection-animal .form-group select,
+.protection-animal .form-group textarea,
+.cause-health .form-group input,
+.cause-health .form-group select,
+.cause-health .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #94B4C1;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.cause-social .form-group input:focus,
+.cause-social .form-group select:focus,
+.cause-social .form-group textarea:focus,
+.protection-animal .form-group input:focus,
+.protection-animal .form-group select:focus,
+.protection-animal .form-group textarea:focus,
+.cause-health .form-group input:focus,
+.cause-health .form-group select:focus,
+.cause-health .form-group textarea:focus {
+  border-color: #213448;
+  outline: none;
+}
+
+.cause-social .form-group textarea,
+.protection-animal .form-group textarea,
+.cause-health .form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.cause-social .submit-btn,
+.protection-animal .submit-btn,
+.cause-health .submit-btn {
+  background: linear-gradient(90deg, #213448, #547792);
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.cause-social .submit-btn:hover,
+.protection-animal .submit-btn:hover,
+.cause-health .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  /* Home */
+  .home .header .container {
+    flex-direction: column;
+  }
+
+  .home .navigation {
+    margin-top: 1rem;
+  }
+
+  .home .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home .content-section {
+    grid-template-columns: 1fr;
+  }
+
+  .home .cta {
+    padding: 20px;
+  }
+
+  /* Causas Sociales, Protección Animal y Salud y Bienestar */
+  .cause-social .support-options,
+  .protection-animal .support-options,
+  .cause-health .support-options {
+    grid-template-columns: 1fr;
+  }
+
+  .cause-social .donation-form,
+  .protection-animal .donation-form,
+  .cause-health .donation-form {
+    padding: 20px;
+  }
+}
